@@ -29,10 +29,22 @@ body, html {
     text-transform: uppercase;
     opacity: 0;
     transition: opacity 1s ease;
+    color: white; /* Texte blanc */
+    text-shadow: 0 0 3px #ccc, 0 0 7px #bbb, 0 0 15px #aaa, 0 0 30px #999; /* Lueur blanche douce */
+    animation: neonBlink 1.5s infinite alternate; /* Animation clignotement */
 }
 
 .intro-text.visible {
     opacity: 1;
+}
+
+@keyframes neonBlink {
+    0%, 100% {
+        text-shadow: 0 0 3px #ccc, 0 0 7px #bbb, 0 0 15px #aaa, 0 0 30px #999;
+    }
+    50% {
+        text-shadow: 0 0 2px #bbb, 0 0 5px #aaa, 0 0 10px #999, 0 0 20px #888;
+    }
 }
 
 .button {
@@ -46,6 +58,9 @@ body, html {
     cursor: pointer;
     opacity: 0;
     transition: opacity 1s ease;
+    color: white; /* Texte blanc */
+    text-shadow: 0 0 3px #ccc, 0 0 7px #bbb, 0 0 15px #aaa, 0 0 30px #999; /* Lueur blanche douce */
+    animation: neonBlink 1.5s infinite alternate; /* Animation clignotement */
 }
 
 .button.visible {
