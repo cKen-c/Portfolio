@@ -41,4 +41,5 @@ document.addEventListener("DOMContentLoaded", function() {
         exitButton.classList.remove("visible");
         navBarLinks.forEach(link => link.classList.remove("visible"));
     });
+    
 });
